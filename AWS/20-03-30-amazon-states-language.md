@@ -14,7 +14,7 @@ Unlike OpenWDL, which has three workflow engines to support it - Cromwell, MiniW
 
 It's custom built and since it's JSON, it's quite well suited for the task.
 
-However, I'm going to create an engine to parse ASL and use it for my own workflows. There are examples of LocalStack, and Serverless and repo called [Local Step Functions](https://github.com/fadams/local-step-functions) which talks about letting us run Step Functions locally. It even has a WIP engine called [asl-workflow-engine](https://github.com/fadams/local-step-functions/tree/master/asl-workflow-engine) which can potentially parse ASL JSON and also execute against it.
+However, I'm going to create an engine to parse ASL and use it for my own workflows. There are examples of LocalStack, and [Serverless Framework](https://github.com/serverless-operations/serverless-step-functions) and a repo called [Local Step Functions](https://github.com/fadams/local-step-functions) which talks about letting us run Step Functions locally. It even has a WIP engine called [asl-workflow-engine](https://github.com/fadams/local-step-functions/tree/master/asl-workflow-engine) which can potentially parse ASL JSON and also execute against it.
 
 I even found a python library called [StairStep](https://github.com/adamgilman/stairstep) which can create ASL output programmatically, but it's incomplete - it doesn't have the Map function, which is one of the main things I need. 
 
